@@ -7,63 +7,73 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="62dp"
-        android:layout_height="33dp"
-        app:srcCompat="@drawable/ic_menu_3_lines__1_"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_3_lines__1_" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        app:srcCompat="@drawable/ic_user_svgrepo_com"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/imageView2"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/ic_user_svgrepo_com" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="hey Andy,"
-        android:textColor="#000000"
-        android:textSize="30sp"
+        android:text="Hey (name from firebase),"
+        android:textColor="#0D1333"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="Find a subject you want to learn"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="16dp" />
+        android:text="Find a subjet you want to learn"
+        android:textColor="#61688b"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/search_subj"
         android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
-        android:drawablePadding="10dp"
+        android:drawablePadding="16dp"
         android:ems="10"
         android:hint="Search for subjects"
         android:inputType="textPersonName"
-        android:paddingStart="10dp"
+        android:paddingStart="16dp"
         android:singleLine="true"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
